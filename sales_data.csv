@@ -1,0 +1,9 @@
+transaction_id,customer_id,product_category,sale_amount,transaction_date,payment_method
+T1001,C881,Electronics,1250.00,2026-01-15,Credit Card
+T1002,C412,Apparel,45.50,2026-01-16,PayPal
+T1003,C881,Electronics,89.99,2026-01-16,Credit Card
+T1004,C203,Home & Kitchen,310.00,2026-01-17,Debit Card
+T1005,C119,Apparel,120.00,2026-01-18,Cash
+T1006,C412,Electronics,540.00,2026-01-19,PayPal
+T1007,C305,Home & Kitchen,25.00,2026-01-20,Credit Card
+T1008,C203,Apparel,85.20,2026-01-21,Debit Card

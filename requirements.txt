@@ -1,0 +1,14 @@
+streamlit
+# --- Core LLM Orchestration ---
+langchain-ollama>=1.1.0
+
+# --- Asynchronous Queue ---
+rq>=1.15.0
+
+# --- Default Data Analysis Stack ---
+pandas>=2.2.3
+numpy>=2.1.0
+matplotlib>=3.10.0
+seaborn>=0.13.2
+ollama
+
