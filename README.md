@@ -1,2 +1,54 @@
 # Autonomous_Coding_Analyst
 Local DeepSeek-Coder Analyst , a Secure, sequential processing Self-Correcting task pipeline running safely on your 8GB RAM architecture.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ 
+To optimise memeory usage in your machine:
+
+Step 1:
+ Open your Windows User profile folder (Press Win + R, type %USERPROFILE%, and hit Enter).
+ Create a plain text file named .wslconfig (make sure it doesn't end in .txt).
+ Paste the following configuration inside it and save it:ini[wsl2]
+memory=1GB   # Limits WSL2 memory consumption so Ollama has room to breathe
+processors=2 # Caps CPU cores to leave performance overhead for Windows
+
+
+Step2 :
+Restart WSL2 by opening a command prompt and running
+wsl --shutdown
+
+ Step3: Start Redis on WSL:
+
+- sudo service redis-server start
+- redis-cli ping
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Now open two terminals:
+- start the worker.py in one terminal.
+- start the streamlit app in another terminal, streamlit run app.py
+ 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Create sales_data.csv in proeject directoty:
+
+Input prompt for UI:
+
+Load the file 'sales_data.csv' using pandas.
+Perform the following analytical operations:
+1. Parse 'transaction_date' as a datetime object.
+2. Group the data by 'product_category' and calculate the total 'sale_amount' for each category.
+3. Find the 'customer_id' who spent the most total money overall.
+
+Print out the final grouped sales dataframe and the top spending customer ID directly to the terminal stdout.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+## Architecture:
+Find the architecurl diagram in the Architecture folder.
+
+## Application testing:
+You can see some scenario testing in Artifacts folder.
+
+
